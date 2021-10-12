@@ -36,7 +36,7 @@
    &kp ESC   &kp EXCL  &kp AT    &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp STAR &kp LPAR  &kp RPAR  &kp DEL
    &kp LCTL  &kp GRAVE &kp PIPE2 &kp BSLH &kp LBRC &kp LBKT    &kp RBKT  &kp RBRC  &kp PLUS &kp MINUS &kp EQUAL &kp ENTER
    &kp LSHFT &kp TILDE &kp X     &kp C    &kp V    &kp B       &kp N     &kp UNDER &kp LT   &kp GT    &kp FSLH  &kp RSHFT
-                           &kp LGUI &kp LALT &lt LHOLD BACKSPACE    &lt RHOLD SPACE &kp RALT &kp RCTRL
+                           &kp LGUI &kp LALT &lt LHOLD BACKSPACE    &lt RHOLD SPACE &kp RALT &tog GAMING
                         >;
                 };
 
