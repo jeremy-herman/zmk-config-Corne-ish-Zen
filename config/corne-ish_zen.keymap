@@ -12,7 +12,7 @@
 #define QWERTY 0
 #define LHOLD 1
 #define RHOLD 2
-#define NUMROW 3
+#define GAMING 3
 #define ADJUST 4
 #define CONFIG 5
 
@@ -50,13 +50,14 @@
                         >;
                 };
 
-                numrow_layer {
-                        label = "NUMROW";
+                gaming_layer {
+                        label = "GAMING";
                         bindings = <
-   &kp ESC   &kp N1 &kp N2 &kp N3    &kp N4    &kp N5       &kp N6   &kp N7   &kp N8 &kp N9    &kp N0   &kp DEL
-   &kp GRAVE &none  &none  &kp PSCRN &kp MINUS &kp EQUAL    &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp SEMI &none
-   &none     &none  &none  &kp BSLH  &kp LBKT  &kp RBKT     &none    &none    &none  &none     &none    &none 
-                          &mo CONFIG &kp LCTL &mo NUMROW    &kp SPC &mo ADJUST &kp F13
+   &kp TAB   &kp Q &kp W &kp E &kp R &kp T    &kp Y &kp U &kp I    &kp O   &kp P    &kp BKSP
+   &kp LCTL  &kp A &kp S &kp D &kp F &kp G    &kp H &kp J &kp K    &kp L   &kp QUOT &kp SEMI
+   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B    &kp N &kp M &kp CMMA &kp DOT &kp FSLH &kp RSHFT
+          &kp ESC &kp LALT &kp SPC        &lt RHOLD SPACE &kp RALT &kp RCTRL
+                        >;
                         >;
                 };
 
@@ -66,7 +67,7 @@
    &kp F1      &kp F2  &kp F3   &kp F4    &kp F5 &kp F6    &kp F7   &kp F8   &kp F9 &kp F10   &kp F11 &kp F12
    &kp CAPS    &kp INS &kp HOME &kp PG_UP &none  &none     &kp LEFT &kp DOWN &kp UP &kp RIGHT &none   &none
    &kp LSHFT  &kp DEL &kp END  &kp PG_DN &none  &none     &none    &none    &none  &none     &none   &none
-                           &kp LGUI &kp LCTL &mo NUMROW    &kp SPC &mo ADJUST &kp F13
+                           &kp LGUI &kp LCTL &lt LHOLD BACKSPACE    &kp SPC &mo ADJUST &kp F13
                         >;
                 };
 
@@ -76,7 +77,7 @@
    &reset     &none        &none        &none        &none        &none           &none &none &none &none &none &none 
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &none &none &none &none &none &none
    &none      &none        &none        &none        &none        &none           &none &none &none &none &none &none
-                                                &mo CONFIG &kp LCTL &mo NUMROW    &kp SPC &mo ADJUST &kp F13
+                                                &mo CONFIG &kp LCTL &lt LHOLD BACKSPACE    &kp SPC &mo ADJUST &kp F13
                         >;
                 };
         };
