@@ -10,9 +10,11 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define QWERTY 0
-#define NUMROW 1
-#define ADJUST 2
-#define CONFIG 3
+#define LHOLD 1
+#define RHOLD 2
+#define NUMROW 3
+#define ADJUST 4
+#define CONFIG 5
 
 / {
         keymap {
@@ -25,6 +27,26 @@
    &kp LCTL  &kp A &kp S &kp D &kp F &kp G    &kp H &kp J &kp K    &kp L   &kp QUOT &kp SEMI
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B    &kp N &kp M &kp CMMA &kp DOT &kp FSLH &kp RSHFT
           &kp LGUI &kp LALT &lt LHOLD BACKSPACE        &lt RHOLD SPACE &kp RALT &kp RCTRL
+                        >;
+                };
+
+                lefthold_layer {
+                        label = "LHOLD";
+                        bindings = <
+   &kp ESC   &kp EXCL  &kp AT    &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp STAR &kp LPAR  &kp RPAR  &kp DEL
+   &kp LCTL  &kp GRAVE &kp PIPE2 &kp BSLH &kp LBRC &kp LBKT    &kp RBKT  &kp RBRC  &kp PLUS &kp MINUS &kp EQUAL &kp ENTER
+   &kp LSHFT &kp TILDE &kp X     &kp C    &kp V    &kp B       &kp N     &kp UNDER &kp LT   &kp GT    &kp FSLH  &kp RSHFT
+                           &kp LGUI &kp LALT &lt LHOLD BACKSPACE    &lt RHOLD SPACE &kp RALT &kp RCTRL
+                        >;
+                };
+
+                righthold_layer {
+                        label = "RHOLD";
+                        bindings = <
+   &kp ESC   &kp Q &kp N7 &kp N8 &kp N9 &kp N0    &kp Y &kp PG_UP &kp UP &kp O   &kp P    &kp DEL
+   &kp LCTL  &kp A &kp N4 &kp N5 &kp N6 &kp G    &kp HOME &kp LEFT &kp DOWN &kp RIGHT &kp END &kp ENTER
+   &kp LSHFT &kp Z &kp N1 &kp N2 &kp N3 &kp B    &kp N &kp PG_DN &kp CMMA &kp DOT &kp FSLH &kp RSHFT
+             &kp LGUI &kp LALT &lt LHOLD BACKSPACE    &lt RHOLD SPACE &kp RALT &kp RCTRL
                         >;
                 };
 
