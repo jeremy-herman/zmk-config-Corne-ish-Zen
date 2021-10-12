@@ -43,7 +43,7 @@
                 righthold_layer {
                         label = "RHOLD";
                         bindings = <
-   &kp ESC   &kp Q &kp N7 &kp N8 &kp N9 &kp N0    &kp Y &kp PG_U &kp UP &kp O   &kp P    &kp DEL
+   &kp ESC   &kp Q &kp N7 &kp N8 &kp N9 &kp N0    &kp Y &kp PG_UP &kp UP &kp O   &kp P    &kp DEL
    &kp LCTL  &kp A &kp N4 &kp N5 &kp N6 &kp G    &kp HOME &kp LEFT &kp DOWN &kp RIGHT &kp END &kp ENTER
    &kp LSHFT &kp Z &kp N1 &kp N2 &kp N3 &kp B    &kp N &kp PG_DN &kp CMMA &kp DOT &kp FSLH &kp RSHFT
              &kp LGUI &kp LALT &lt LHOLD BACKSPACE    &lt RHOLD SPACE &kp RALT &kp RCTRL
